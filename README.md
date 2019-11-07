@@ -20,7 +20,7 @@ We have a very limited time-frame for this project, so we want you to read about
 
 ### Step 1
 
-Each member of your team should clone (NOT FORK!) the correct repo for your team.
+XX Each member of your team should clone (NOT FORK!) the correct repo for your team.
 
 ### Step 2
 
