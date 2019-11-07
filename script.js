@@ -2,7 +2,7 @@
 //Cuisine
 // The restaurant name XX
 // * The average cost for a dinner there XX
-// * The address of the restaurant
+// * The address of the restaurant XX
 // * An image (you choose which image you'd like to display from the response)
 // * Either the `aggregate_rating` or the `rating_text` for that restaurant
 
@@ -19,7 +19,8 @@ fetch(url, { headers: { "user-key": apiKey } })
     json.restaurants.forEach(resto => {
       document.getElementById("restaurants").innerHTML += `<li>${resto.restaurant.name}</li>`
       document.getElementById("restaurants").innerHTML += `<li>${resto.restaurant.average_cost_for_two}</li>`
-      document.getElementById("restaurants").innerHTML += `<li>${resto.restaurant.average_cost_for_two}</li>`
-
+      document.getElementById("restaurants").innerHTML += `<li>${resto.restaurant.location.address}</li>`
+      document.getElementById("restaurants").innerHTML += `<img src=${resto.restaurant.photos[0].photo.thumb_url}>`
+      document.getElementById("restaurants").innerHTML += `<li>${resto.restaurant.user_rating.aggregate_rating}</li>`
     });
-  })
+  });
