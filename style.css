@@ -26,13 +26,13 @@ h3{
   margin: 20px;
 }
 
-#deliveryUp, #deliveryDown, #priceUp, #priceDown{
+#ratingUp, #ratingDown, #priceUp, #priceDown{
   width: 20px;
   height: 100%;
   margin-right: 7px;
 }
 
-#delivery{
+#rating {
   display: flex;
   justify-content: center;
   align-items: center;
