@@ -16,6 +16,18 @@
   <header>
     <img class="logo" src="./logo.png" alt="logo">
   </header>
+  <div class="filter-container">
+    <div id="delivery">
+      <h3>Delivery</h3>
+      <img id="deliveryUp" src="./up.png" alt="arrow up" onclick="deliveryDescending()">
+      <img id="deliveryDown" src="./down.png" alt="arrow down" onclick="deliveryAscending()">
+    </div>
+    <div id="price">
+      <h3>Price</h3>
+      <img id="priceUp" src="./up.png" alt="arrow up" onclick="priceDescending()">
+      <img id="priceDown" src="./down.png" alt="arrow down" onclick="priceAscending()">
+    </div>
+  </div>
   <ul id="restaurants"></ul>
   <script src="./script.js"></script>
 </body>
