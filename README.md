@@ -24,7 +24,7 @@ XX Each member of your team should clone (NOT FORK!) the correct repo for your t
 
 ### Step 2
 
-Togeteher as a mob, do the foundations of the project together. Make sure that you have fetched from the API and presented all data on the page in a suitable HTML structure which you all agree on. You can also use one person's code from the practices as long as **everyone** understands the code. No styling is needed at this point. 
+XX Togeteher as a mob, do the foundations of the project together. Make sure that you have fetched from the API and presented all data on the page in a suitable HTML structure which you all agree on. You can also use one person's code from the practices as long as **everyone** understands the code. No styling is needed at this point. 
 
 You should now have data from at least 10 restaurants from the `/search` endpoint on your page, and include the following data: 
 
@@ -34,7 +34,7 @@ You should now have data from at least 10 restaurants from the `/search` endpoin
 * An image (you choose which image you'd like to display from the response)
 * Either the `aggregate_rating` or the `rating_text` for that restaurant
 
-### Step 3 
+git st### Step 3 
 
 Divide into pairs or groups of three and choose freely from the selection of features below. The groups will work separatley on features in their own "feature branch" and we will help you to merge this into the master branch before the demo. Of course; have communication within the group and feel free to merge and commit code when you feel that the time is right. Help each-other and share knowledge in the team is always encouraged. 
 
