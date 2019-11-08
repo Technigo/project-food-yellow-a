@@ -1,6 +1,47 @@
-header{
+body {
+  margin: 0;
+}
+
+header {
   background: white;
-    height: 80px;
-    margin-bottom: 80px;
-    text-align: center;
+  height: 80px;
+  margin: 0 0 80px 0;
+  text-align: center; 
+}
+
+h3{
+  margin-right: 10px;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #d80f65;
+  height: 40px;
+  margin: 0;
+}
+
+.logo {
+  margin: 20px;
+}
+
+#deliveryUp, #deliveryDown, #priceUp, #priceDown{
+  width: 20px;
+  height: 100%;
+  margin-right: 7px;
+}
+
+#delivery{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+#price{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
 }
