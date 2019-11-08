@@ -6,7 +6,7 @@
 // * An image (you choose which image you'd like to display from the response)
 // * Either the `aggregate_rating` or the `rating_text` for that restaurant
 
-const apiKey = "b787e9052c508e6c2069f519f753dbff";
+const apiKey = "ea43edc7f1e9f80698633ebd64a5f192";
 const cityId = 61; //London
 const cuisineId = 60; //Japanese
 const cards = document.getElementById('cards')
@@ -15,11 +15,13 @@ const cards = document.getElementById('cards')
 
 const url = `https://developers.zomato.com/api/v2.1/search?entity_id=${cityId}&entity_type=city&cuisines=${cuisineId}`
 
+// &sort=cost&order=desc
+
 fetch(url, {
-    headers: {
-      "user-key": apiKey
-    }
-  })
+  headers: {
+    "user-key": apiKey
+  }
+})
   .then(res => res.json())
   .then(json => {
     console.log(json);
@@ -31,9 +33,15 @@ fetch(url, {
             <p>${resto.restaurant.name} </p> <p> ${resto.restaurant.user_rating.aggregate_rating}</p>
           </div>
           <p class="address">Address: ${resto.restaurant.location.address} </p>
-          <p class="average"> Average price: ${resto.restaurant.average_cost_for_two/2} £</p>
+          <p class="average"> Average price: ${resto.restaurant.average_cost_for_two / 2} £</p>
 
       </div>
       `
     });
   });
+
+
+
+// const priceDescending = () => {
+//   averagePrice.sort()
+// }
