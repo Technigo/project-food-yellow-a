@@ -1,3 +1,25 @@
+
+body {
+    font-family: 'Raleway', sans-serif;
+    max-width: 25%;
+}
+
+#cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.photo {
+    width: 100%;
+
+}
+
+.nameRate {
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    background-color: #d80f65;
+
 body {
   margin: 0;
 }
