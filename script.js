@@ -28,12 +28,10 @@ fetch(url, {
       <div class="card">
           <img class ="photo" src=${resto.restaurant.photos[0].photo.thumb_url}>
           <div class="nameRate">
-            <p>${resto.restaurant.name} </p> <p> ${resto.restaurant.user_rating.aggregate_rating}</p>
+            <h1>${resto.restaurant.name} </h1> <h1> ★ ${resto.restaurant.user_rating.aggregate_rating}</h1>
           </div>
           <p class="address">Address: ${resto.restaurant.location.address} </p>
           <p class="average"> Average price: ${resto.restaurant.average_cost_for_two/2} £</p>
-
-      </div>
-      `
+      </div>`
     });
   });
